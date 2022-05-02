@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Project_Android/Detai_Android_N2/app/src/main/res/drawable/login_button_bk.xml" value="0.1125" />
+        <entry key="..\:/Project_Android/Detai_Android_N2/app/src/main/res/layout/activity_add_customer.xml" value="0.18020833333333333" />
         <entry key="..\:/Project_Android/Detai_Android_N2/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/Project_Android/Detai_Android_N2/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Project_Android/Detai_Android_N2/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Project_Android/Detai_Android_N2/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/Project_Android/Detai_Android_N2/app/src/main/res/layout/customer_item.xml" value="0.18020833333333333" />
         <entry key="..\:/Project_Android/Detai_Android_N2/app/src/main/res/layout/layout_login.xml" value="0.10104166666666667" />
         <entry key="..\:/Project_Android/Detai_Android_N2/app/src/main/res/layout/layout_register.xml" value="0.4" />
       </map>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.myapplication.MainActivity"
+    tools:context=".Login"
     android:background="@drawable/login_bk"
     android:focusableInTouchMode="true">
 
@@ -31,27 +31,30 @@
             android:text="Login" />
 
         <EditText
-            android:id="@+id/editTextEmail"
+            android:id="@+id/txt_Email"
             style="@style/modifiedEditText"
             android:hint="@string/login_email_hint"
             android:inputType="textEmailAddress"
-            android:maxLines="1" />
+            android:maxLines="1"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
-            android:id="@+id/editTextPassword"
+            android:id="@+id/txt_Password"
             style="@style/modifiedEditText"
             android:hint="@string/login_password_hint"
             android:inputType="textPassword"
-            android:maxLines="1" />
+            android:maxLines="1"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/cirLoginButton"
+            android:id="@+id/btnLogin"
             style="@style/loginButton"
             android:layout_gravity="right"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:text="Login" />
 
         <TextView
+            android:id="@+id/txtSignUp"
             style="@style/parent"
             android:layout_marginTop="@dimen/loginViewsMargin"
             android:text="@string/login_signup_hint"
