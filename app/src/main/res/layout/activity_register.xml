@@ -4,89 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.myapplication.MainActivity"
-    android:background="@drawable/login_bk"
-    android:focusableInTouchMode="true">
+    tools:context=".RegisterActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/login_bk" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Your name"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265">
+        app:layout_constraintTop_toTopOf="@+id/imageView3"
+        tools:ignore="TouchTargetSizeCheck" />
 
-        <TextView
-            style="@style/loginHeader"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/loginViewsMargin"
-            android:text="Register" />
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName"
+        tools:ignore="TouchTargetSizeCheck" />
 
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail"
+        tools:ignore="TouchTargetSizeCheck" />
 
-        <EditText
-            android:id="@+id/editTextName"
-            style="@style/modifiedEditText"
-            android:hint="@string/login_name_hint"
-            android:inputType="textPersonName"
-            android:maxLines="1" />
+    <EditText
+        android:id="@+id/txtConform"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Conform Password"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword"
+        tools:ignore="TouchTargetSizeCheck" />
 
-        <EditText
-            android:id="@+id/editTextMobile"
-            style="@style/modifiedEditText"
-            android:hint="@string/login_mobile_number_hint"
-            android:inputType="phone"
-            android:maxLines="1" />
-
-
-        <EditText
-            android:id="@+id/editTextEmail"
-            style="@style/modifiedEditText"
-            android:hint="@string/login_email_hint"
-            android:inputType="textEmailAddress"
-            android:maxLines="1" />
-
-
-        <EditText
-            android:id="@+id/editTextPassword"
-            style="@style/modifiedEditText"
-            android:hint="@string/login_password_hint"
-            android:inputType="textPassword"
-            android:maxLines="1" />
-
-
-        <EditText
-            android:id="@+id/editTextPassword2"
-            style="@style/modifiedEditText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="@string/login_password_confirm"
-            android:inputType="textPassword"
-            android:maxLines="1" />
-
-        <Button
-            android:id="@+id/cirLoginButton"
-            style="@style/loginButton"
-            android:layout_gravity="right"
-            android:layout_marginTop="@dimen/loginViewsMargin"
-            android:text="Signup" />
-
-        <TextView
-            style="@style/parent"
-            android:layout_marginTop="@dimen/loginViewsMargin"
-            android:text="@string/login_signup_hint"
-            android:textAlignment="textEnd"
-            android:textColor="@color/primaryTextColor"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
+    <Button
+        android:id="@+id/btnLogin_R"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="100dp"
+        android:text="Register"
+        app:cornerRadius="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtConform" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
